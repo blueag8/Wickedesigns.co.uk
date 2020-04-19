@@ -183,9 +183,10 @@ img.cv {
 }
 
 .alert {
-	padding: 20px;
-	margin: 18px;
-	background-color: #c7ecc4;
+    color: black;
+    padding: 30px;
+    margin: 11px;
+    background-color: #c7ecc4;
 }
 
 .btn {
