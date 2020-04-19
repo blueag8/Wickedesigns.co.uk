@@ -1,70 +1,75 @@
 {% extends 'base.html' %}
 {% block content %}
 {% block additional_styles %}
+
 <style>
 	body {
 		background-image: url("/static/img/resume_page.png");
 	}
 </style>
-
 <!-- contact form -->
-	<div class="container form">
-		<div class="row">
-			<div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4 col-xs-12">
-				<div class="panel">
-					<div class="panel-body">
-						<div class="img-responsive">
-							<img id="naomi" src="/static/img/naomi.jpeg">
-                        </div>
-					     <div class="email">
+<div class="container form">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4 col-xs-12">
+			<div class="panel">
+				<div class="panel-body">
+					<div class="img-responsive">
+						<img id="naomi" src="/static/img/naomi.jpeg">
+						</div>
+						<div class="email">
 							<h5>naomi@wickedesigns.co.uk</h5>
-					     </div>
-							<h2 style="color:#d749d1;">Interested in working together?</h2>
-
+						</div>
+						<h2 style="color:#d749d1;">Interested in working together?</h2>
 						<!-- templates/email.html -->
-
-                                     <form method="post" action="/contact">
-                                   <div class="col-12">
-    <i class="fa fa-user" aria-hidden="true"></i>
-	<input type="text" name="name" class="form-control" placeholder="Enter Name" required/>
-     </div>
-    <div class="col-12">
-     <i class="fa fa-envelope" aria-hidden="true"></i>
-      	<input type="email" name="senderEmail" class="form-control" placeholder="Enter Email" required/>
-    </div>
-      <div class="col-12">
-    <i class="fa fa-phone" style="color:black" aria-hidden="true"></i> 
-	<input type="number" name="number" class="form-control" placeholder="Phone Number" required/></iput>
-    </div>
-    <div class="col-12">
-    <i class="fa fa-comment" aria-hidden="true"></i> 
-	<textarea rows="3" name="message" class="form-control" placeholder="Message" required/></textarea>
-    </div>
-    <div class="col-12">
- 			<button class="btn" type="submit"> Send </button>
-    </div>
-  </div>
-</form>
-</div>
-
-                        <div class="cv">
-                         <li class="cv"><a href="https://www.canva.com/design/DAD2hBSnKGc/_k7YES1ofnMPiljZSmKRJA/view?utm_content=DAD2hBSnKGc&utm_campaign=designshare&utm_medium=link&utm_source=viewer" target="_blank" data-toggle="tooltip" title="View my Curriculum Vitae" style="color:#000000;">
-                         Naomi Wickham CV</a></li>
-                        </div>
-
-		                <div class="social">
-                                       <a><i class="fa fa-instagram"></i></a> 
-
-							<a><i class="fa fa-facebook-square"></i></a>
-                        
-                            <a href="https://github.com/blueag8"><i class="fa fa-github-square"></i></a>
-                         
-							<a href="https://www.linkedin.com/in/naomiwickham/"><i class="fa fa-linkedin"></i></a>
-        
+						<form method="post" action="/contact">
+							<div class="col-12">
+								<i class="fa fa-user" aria-hidden="true"></i>
+								<input type="text" name="name" class="form-control" placeholder="Enter Name" required/>
+							</div>
+							<div class="col-12">
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+								<input type="email" name="senderEmail" class="form-control" placeholder="Enter Email" required/>
+							</div>
+							<div class="col-12">
+								<i class="fa fa-phone" style="color:black" aria-hidden="true"></i>
+								<input type="number" name="number" class="form-control" placeholder="Phone Number" required/>
+							</iput>
+						</div>
+						<div class="col-12">
+							<i class="fa fa-comment" aria-hidden="true"></i>
+							<textarea rows="3" name="message" class="form-control" placeholder="Message" required/></textarea>
 					</div>
-                    <div class="jot" style="color:pink;">
-                       <a
-      href="javascript:void(
+					<div class="col-12">
+						<button class="btn" type="submit"> Send </button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="cv">
+			<li class="cv">
+				<a
+								href="https://www.canva.com/design/DAD2hBSnKGc/_k7YES1ofnMPiljZSmKRJA/view?utm_content=DAD2hBSnKGc&utm_campaign=designshare&utm_medium=link&utm_source=viewer"
+								target="_blank" data-toggle="tooltip" title="View my Curriculum Vitae"
+								style="color:#000000;">
+								Naomi Wickham CV</a>
+			</li>
+		</div>
+		<div class="social">
+			<a>
+				<i class="fa fa-instagram"></i>
+			</a>
+			<a>
+				<i class="fa fa-facebook-square"></i>
+			</a>
+			<a href="https://github.com/blueag8">
+				<i class="fa fa-github-square"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/naomiwickham/">
+				<i class="fa fa-linkedin"></i>
+			</a>
+		</div>
+		<div class="jot" style="color:pink;">
+			<a href="javascript:void(
         window.open(
           'https://form.jotform.com/200984809367366',
           'blank',
@@ -75,14 +80,12 @@
         )
       )
     ">
-      Website Design Quote
-    </a>
-                  </div>
-				</div>
-			</div>
+							Website Design Quote
+						</a>
 		</div>
-		<!-- Form Ended -->
+	</div>
+</div>undefined</div>undefined<!-- Form Ended -->
 
-	{% endblock %}
+		{% endblock %}
 
-	{% endblock %}
+		{% endblock %}

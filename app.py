@@ -54,7 +54,7 @@ def contact():
             recipients=[recipient],
             body= "customer:" + " " + name + "\n" + "phone number:" + " " + number + "\n\n"  + message)
         mail.send(msg)
-        flash("Sent", category="message")
+        flash("Message Sent, Thank you!", category="message")
   
    
     return render_template("contact.html")
@@ -62,4 +62,4 @@ def contact():
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=os.environ.get('PORT'),
-            debug=True)
+            debug=False)
