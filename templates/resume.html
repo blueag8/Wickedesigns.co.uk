@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+{% block additional_styles %}
+<style>
+	body {
+		background-image: url("/static/img/resume_page.png");
+	}
+</style>
+{% endblock %}
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 col-md-6 col-md-offset-6">
+			<a href="https://www.canva.com/design/DAD2hBSnKGc/_k7YES1ofnMPiljZSmKRJA/view?utm_content=DAD2hBSnKGc&utm_campaign=designshare&utm_medium=link&utm_source=viewer"
+			target="_blank"><img class="cv"src="/static/img/resume_link.png" data-toggle="tooltip" title="Click to View!"></a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="mobileShow">Click to<i class="fa fa-hand-o-up"></i> View</div>
+		    <div class="col-xs-4 col-xs-offset-8 col-sm-4 col-sm-offset-8">
+			<a href="https://www.linkedin.com/in/naomiwickham/"><i class="fa fa-linkedin"></i></a>
+			<a href="https://github.com/blueag8"><i class="fa fa-github-square"></i></a>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
