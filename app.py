@@ -54,7 +54,7 @@ def contact():
             recipients=[recipient],
             body= "customer:" + " " + name + "\n" + "phone number:" + " " + number + "\n\n"  + message)
         mail.send(msg)
-        flash("Message Sent, Thank you!", category="message")
+        flash("Thank you for the Message! I will reply as soon as I can.", category="message")
   
    
     return render_template("contact.html")

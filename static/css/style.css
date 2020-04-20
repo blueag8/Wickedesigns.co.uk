@@ -99,9 +99,9 @@ i.fa.fa-github-square {
 }
 
 img.cv {
-	height: 60vh;
-	float: right;
-	margin-top: 30px;
+	margin-right: 5vh;
+    height: 80vh;
+    float: right;
 }
 
 .navbar-default {
@@ -182,6 +182,10 @@ img.cv {
 	margin-top: 10px;
 }
 
+.carousel {
+    position: relative;
+    margin-top: 30px;
+}
 .alert {
     color: black;
     padding: 30px;
@@ -190,6 +194,8 @@ img.cv {
 }
 
 .btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
 	background: #c7ecc4;
 }
 
@@ -217,9 +223,8 @@ img.cv {
 
 @media(max-width: 375px) {
 	img.cv {
-		height: 50vh;
-		float: right;
-		margin-top: 100px;
+		height: 500px;
+		float: none;
 	}
 }
 
@@ -246,6 +251,8 @@ img.cv {
 		margin-top: 0;
 	}
 	.mobileShow {
-		display: inline;
+	    float: right;
+        display: flex;
+        margin-right: 50px;
 	}
 }
