@@ -223,8 +223,11 @@ img.cv {
 
 @media(max-width: 375px) {
 	img.cv {
-		height: 500px;
-		float: none;
+	    margin-top: 2px;
+        margin-bottom: 20px;
+        height: 488px;
+        float: none;
+        margin-right: 0;
 	}
 }
 
